@@ -1,4 +1,6 @@
-
+import os
+import discord
+from discord.ext import commands
 
 
 import openai
@@ -9,7 +11,6 @@ from discord.ext import commands
 openai.api_key = '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'
 
 # Discord bot token'ı
-DISCORD_TOKEN = 'MTE3MDcyMjQwOTI0Mjk1MTgxMg.GS7Gp8.LlSvYCtKB8cp1tK05Yne9LOD9YDfB0F_jiSBsQ'
 # Discord Intents ayarı
 intents = discord.Intents.default()
 intents.messages = True
@@ -64,5 +65,5 @@ async def chat(ctx, *, message):
     await ctx.send(answer)
 
 # Botu çalıştır.
-bot.run(DISCORD_TOKEN)
+bot.run(os.environ["DISCORD_TOKEN"])
 
