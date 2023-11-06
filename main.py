@@ -65,5 +65,5 @@ async def chat(ctx, *, message):
     await ctx.send(answer)
 
 # Botu çalıştır.
-bot.run(os.environ["DISCORD_TOKEN"])
+bot.run("MTE3MDcyMjQwOTI0Mjk1MTgxMg.GaSf0x.OcM33sEBXjC65xUPicRy48Z65EQBOsF88SADsA")
 
